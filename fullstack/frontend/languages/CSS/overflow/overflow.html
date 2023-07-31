@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Overflow</h1>
+    <p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p>
+
+        The overflow property has the following values:
+        
+        <p>visible - Default. The overflow is not clipped. The content renders outside the element's box.</p>
+        <p>hidden - The overflow is clipped, and the rest of the content will be invisible.</p>
+       <p>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.</p>
+       <p>auto - Similar to scroll, but it adds scrollbars only when necessary.</p>
+    <style>
+        #root{
+            width: 200px;
+            height: 200px;
+            border: 3px solid purple;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+
+        }
+    </style>
+
+    <div id="root">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate doloremque quas consequatur numquam molestiae quisquam facere quam ipsam itaque, doloribus id, maxime 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate doloremque quas consequatur numquam molestiae quisquam facere quam ipsam itaque, doloribus id, maxime
+    </div>
+</body>
+</html>
