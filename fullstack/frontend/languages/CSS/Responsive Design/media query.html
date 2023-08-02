@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Media Query</h1>
+    <p>The Media query in CSS is used to create a responsive web design. It means that the view of a web page differs from system to system based on screen or media types. The breakpoint specifies for what device-width size, the content is just starting to break or deform.</p>
+    <style>
+        .item{
+            font-size: 40px;
+            color: white;
+            background-color: blue;
+            display: none;
+    
+        }
+@media ( max-width:300px){
+    #item-1{
+        display: block;
+        background-color: purple;
+        
+    }
+}
+@media ( min-width:301px) and (max-width:500px){
+    #item-2{
+        display: block;
+        background-color: blue;
+    }
+}
+@media ( min-width:501px) and (max-width:900px){
+    #item-3{
+        display: block;
+        background-color: green;
+    
+    }
+}
+@media ( min-width:901px){
+    #item-4{
+        display: block;
+        background-color:brown;
+        
+    }
+}
+    </style>
+ <div id="item-1" class="item">Device name small devices size of 0px to 300px</div>
+ <div id="item-2" class="item">Device name tabs size of 301px to 500px</div>
+ <div id="item-3" class="item">Device name desktop size of 501px to 900px</div>
+ <div id="item-4" class="item">Device name large Tv sizee of 901px to --px</div>
+    
+</body>
+</html>
+    
