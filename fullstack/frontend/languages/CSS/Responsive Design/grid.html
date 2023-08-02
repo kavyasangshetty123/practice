@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grid</h1>
+    <p>A grid can be defined as an intersecting set of vertical and horizontal lines. CSS Grid layout separates a page into major sections. Grid property offers a grid-based layout system having rows and columns. It makes the designing of web pages easy without positioning and floating.</p>
+    <style>
+        .item{
+            background-color: blueviolet;
+            color: antiquewhite;
+            margin: 5px;
+            font-size: 40px;
+            border: 2px;
+          }
+
+          .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+            grid-template-rows: repeat(6,100px);
+       
+          }
+    </style>
+    <div class="container">
+        <div id="item-1" class="item">html</div>
+        <div id="item-2" class="item">html</div>
+        <div id="item-3" class="item">html</div>
+        <div id="item-4" class="item">html</div>
+        <div id="item-4" class="item">html</div>
+        <div id="item-6" class="item">html</div>
+    </div>
+</body>
+</html>
