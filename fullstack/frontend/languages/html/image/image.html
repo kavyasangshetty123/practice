@@ -8,37 +8,14 @@
 
 </head>
 <body>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Image Tag
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Image Tag</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <h1 style="color: purple;">Image Tag</h1>
+  <figure class="figure"><h1 style="color: purple;">Image Tag</h1>
     <p>The HTML <img> tag is used to embed an image in a web page. Images are not technically inserted into a web page; images are linked to web pages. The <img> tag takes several attributes, of which src, height, width, and alt are the most important.</p>
     
         <p>The src Attribute: The src attribute signifies the image source. Without it, the tag itself wouldn't be functional in the real world.</p>
               
         <p>The alt Attribute: The alt attribute specifies an alternative text for the image. This could be the text that shows during a network failure, for example. Or it could display something when the image source is wrongly specified, so users know what the image is about.</p>
-    <img width="300px" src="./image.jpg" alt="">
-    <img width="300px" src="./image.jpg" alt="">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <img width="300" height="300" src="./image.jpg" class="figure-img img-fluid rounded" alt="...">
+  </figure>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
