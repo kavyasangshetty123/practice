@@ -1,0 +1,1 @@
+console.log(console.log is a function of javascript)
