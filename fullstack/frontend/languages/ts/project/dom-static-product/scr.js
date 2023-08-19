@@ -13,7 +13,8 @@ let myproducts=[
     {name:'laptop',image:'./7.jpg'},
     {name:'tops',image:'./8.webp'},
     {name:'jeans',image:'./9.jpg'},
-    {name:'item',image:'./9.webp'}
+    {name:'item',image:'./9.webp'},
+   
 
 ]
 
@@ -28,5 +29,6 @@ function displayProducts(){
         image.style.width="200px"
         image.style.height="200px"
         div.appendChild(image)
+    
     })
 }
