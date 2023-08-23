@@ -1,0 +1,19 @@
+<script>
+    async function billing(){
+         let p1=250
+  
+  let p2 =new Promise((res,not)=>{
+      setTimeout(()=>{
+          res(250)
+  },2000)
+  
+   })
+  
+  let p3=250
+  p2= await p2
+ let total= p1+p2+p3
+ console.log(total)
+     }
+     billing()
+     
+ </script>

@@ -1,0 +1,14 @@
+<script>
+
+    let apiData= fetch('https://fakestoreapi.com/products')
+    apiData= apiData.then((data)=>{return data.json()})
+              apiData.then((d)=>{console.log(d)})
+    //console.log(apiData)
+ 
+   async function apicaller(){
+     let apiData= fetch('https://fakestoreapi.com/products')
+  apiData=await (await apiData).json()
+    console.log(apiData)
+    }
+    apicaller()
+ </script>
