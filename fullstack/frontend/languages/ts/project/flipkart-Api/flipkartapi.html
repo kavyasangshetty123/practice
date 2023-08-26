@@ -15,6 +15,7 @@
 
     <button onclick="  apicaller()">click me</button>
     <script>
+ 
 
 
 
@@ -22,7 +23,7 @@
 
         async function apicaller() {
             let div = document.getElementById('root')
-            let apiData = fetch('https://fakestoreapi.com/products/category/jewelery')
+            let apiData = fetch('https://fakestoreapi.com/products')
             apiData = await (await apiData).json()
 
 
@@ -32,12 +33,34 @@
 
         apiData.map((item)=>{
             let image = document.createElement('img')
-            image.src = item.image
             image.style.width = "200px"
             image.style.height = "200px"
-            div.appendChild(image)
+            let h1 = document.createElement('h1')
+            let h2 = document.createElement('h2')
+            let h3 = document.createElement('h3')
+           
+            
+                h1.innerHTML=` title :${item.title}`
+                h2.innerHTML=` price :${item.price}`
+                h3.innerHTML=` description :${item.description}`
+                image.src = item.image
+
+
+
+
+                div.appendChild(h1)
+                div.appendChild(h2)
+                div.appendChild(h3)
+                div.appendChild(image)
+
+
+
+
+            
+           
 
         })
+        
         console.log(apiData)
 
     }
