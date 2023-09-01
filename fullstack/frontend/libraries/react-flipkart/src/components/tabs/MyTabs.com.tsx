@@ -9,8 +9,15 @@ import { H1 } from '../../pages/lessons/elements/H1';
 import { MyButton } from '../button/MyButton.com';
 import { MyRatings } from '../ratting/MyRatings.com';
 import { MyAvtar } from '../avtar/MyAvtar.com';
+import { MyCheckBox } from '../CheckBox/MyCheckBox.com';
+import { MySlider } from '../Slider/MySlider.com';
+import { MyToggleButton } from '../ToggleButton/MyToggleButton.com';
+import { MyProgress } from '../../Progress/MyProgress.com';
+import { MyFlotingActionButton } from '../FlotingActionButton/MyFlotingActionButton.com';
+import { MyBadge } from '../Badge/MyBadge.com';
 import { MyFragment } from '../fragment/MyFragment.com';
 import { MyUseStateHook } from '../hook/MyUseStateHook.com';
+
 export let MyTabs:React.FC<{}>=()=>{
   const [value, setValue] = React.useState('1');
 
@@ -22,22 +29,28 @@ console.log("newValue",typeof newValue)
   return (
     <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Box sx={{ borderBottom: 2, borderColor: 'divider' }}>
           <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="props" value="1" />
-            <Tab label="Elemetnts" value="2" />
-            <Tab label="mui elemts" value="3" />
-            <Tab label="fragment" value="4" />
-            <Tab label="hookes" value="5" />
+            <Tab label="PROPS" value="1" />
+            <Tab label="ELEMENTS" value="2" />
+            <Tab label="MUI ELEMENTS" value="3" />
+            <Tab label="FRAGMENT" value="4" />
+            <Tab label="HOOKS" value="5" />
           </TabList>
         </Box>
         <TabPanel value="1"><MyProps/></TabPanel>
         <TabPanel value="2"><H1/></TabPanel>
         <TabPanel value="3">
 
-<MyButton/>
-<MyRatings/>
-<MyAvtar/>
+<MyButton/><br />
+<MyRatings/><br />
+<MyAvtar/><br />
+<MyCheckBox/><br />
+<MySlider/><br />
+<MyToggleButton/><br /><br />
+<MyProgress/><br />
+<MyFlotingActionButton/><br /><br />
+<MyBadge/>
         </TabPanel>
 
         <TabPanel value="4">

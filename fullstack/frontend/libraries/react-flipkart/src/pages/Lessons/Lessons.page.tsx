@@ -5,7 +5,7 @@ export const Lessons:React.FC<{}>=()=>{
     return <>
     <Box>
         <Paper elevation={3}>
-            <Toolbar><h1>all my react lessons</h1></Toolbar>
+            <Toolbar><h1>All React Lessons</h1></Toolbar>
         <MyTabs/>
         </Paper>
         
