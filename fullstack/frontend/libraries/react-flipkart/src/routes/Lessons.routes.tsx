@@ -5,7 +5,7 @@ import { Lessons } from "../pages/lessons/Lessons.page";
 
 export let myLessonsList={
     path:'/lessons',
-    element:<div> <Outlet/></div>,
+    element:<> <Outlet/></>,
     children:[
         {
             path:'props',

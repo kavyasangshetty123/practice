@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 import Box from '@mui/material/Box';
@@ -9,6 +8,9 @@ import { MyProps } from '../../pages/lessons/props/MyProps';
 import { H1 } from '../../pages/lessons/elements/H1';
 import { MyButton } from '../button/MyButton.com';
 import { MyRatings } from '../ratting/MyRatings.com';
+import { MyAvtar } from '../avtar/MyAvtar.com';
+import { MyFragment } from '../fragment/MyFragment.com';
+import { MyUseStateHook } from '../hook/MyUseStateHook.com';
 export let MyTabs:React.FC<{}>=()=>{
   const [value, setValue] = React.useState('1');
 
@@ -25,6 +27,8 @@ console.log("newValue",typeof newValue)
             <Tab label="props" value="1" />
             <Tab label="Elemetnts" value="2" />
             <Tab label="mui elemts" value="3" />
+            <Tab label="fragment" value="4" />
+            <Tab label="hookes" value="5" />
           </TabList>
         </Box>
         <TabPanel value="1"><MyProps/></TabPanel>
@@ -33,6 +37,15 @@ console.log("newValue",typeof newValue)
 
 <MyButton/>
 <MyRatings/>
+<MyAvtar/>
+        </TabPanel>
+
+        <TabPanel value="4">
+          <MyFragment/>
+        </TabPanel>
+        <TabPanel value="5">
+<h1>hookes</h1>
+<MyUseStateHook/>
         </TabPanel>
       </TabContext>
     </Box>
