@@ -1,25 +1,32 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import Slider from '@mui/material/Slider';
-import VolumeDown from '@mui/icons-material/VolumeDown';
-import VolumeUp from '@mui/icons-material/VolumeUp';
-
+import { Carousel } from "react-bootstrap"
+import img1 from '../../static/images/1.jpg'
+import img2 from '../../static/images/2.jpg'
+import img3 from '../../static/images/3.jpg'
 export const MySlider:React.FC<{}>=()=>{
-  const [value, setValue] = React.useState<number>(30);
-
-  const handleChange = (event: Event, newValue: number | number[]) => {
-    setValue(newValue as number);
-  };
-
-  return (
-    <Box sx={{ width: 200 }}>
-      <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-        <VolumeDown />
-        <Slider aria-label="Volume" value={value} onChange={handleChange} />
-        <VolumeUp />
-      </Stack>
-      <Slider disabled defaultValue={30} aria-label="Disabled slider" />
-    </Box>
-  );
+    return <>
+    <Carousel>
+      <Carousel.Item>
+      <img height='400px' width='100%' src={img1}/>
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img height='400px' width='100%' src={img2}/>
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img height='400px' width='100%' src={img3}/>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel></>
 }

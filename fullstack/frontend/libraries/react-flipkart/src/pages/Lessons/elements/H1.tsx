@@ -3,7 +3,7 @@
 // }
 export let H1:React.FC<{}>=()=>{
     console.log(Calu())
-  return  <h1>hello im h1
+  return  <h1>Hello im h1
      {/* {Calu()} */}
      <Calu/>
      {/* <Calu/>
@@ -20,5 +20,5 @@ export let H1:React.FC<{}>=()=>{
 }
 
 function Calu(){
-    return <h1>hello im calu</h1>
+    return <h1>Hello I am calu</h1>
 }
